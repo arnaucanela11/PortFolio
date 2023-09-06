@@ -1,0 +1,163 @@
+.about__main__div {
+  margin-top: 240px;
+  height: fit-content;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content__div {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about__title__div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(130deg, #fff 1.98%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__main__p {
+    color: rgba(244, 244, 244, 0.608);
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 229.5%; /* 35.615px */
+}
+
+.about__study__div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+
+.about__studies__title {
+  color: #ffffffd7;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.studies__div {
+  width: 363px;
+height: 78px;
+flex-shrink: 0;
+border-radius: 27px;
+background: #211930;
+margin-top: -5px;
+margin-left: -5px;
+position: relative;
+}
+
+.studies__div__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 70px;
+  margin-top: 8px;
+}
+
+.upf__image {
+  position: absolute;
+  top: 25%;
+  left: 15px;
+  width: 35px;
+height: 35px;
+flex-shrink: 0;
+border-radius: 35px;
+background: url('../../assets/unnamed (1).jpg') 50% / cover no-repeat, lightgray;
+}
+
+.about__studies__pursuing {
+  color: rgba(255, 194, 60, 0.90);
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+}
+
+.about__studies__degree {
+  color: var(--parrafo, rgba(244, 244, 244, 0.70));
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+}
+
+.about__studies__at {
+  color: var(--parrafo, rgba(244, 244, 244, 0.70));
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+}
+
+.about__studies__UPF {
+  color: var(--parrafo, rgba(244, 244, 244, 0.70));
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+}
+
+.about__interested__title {
+  color: #ffffffc8;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.about__interested__p {
+  color: var(--parrafo, rgba(244, 244, 244, 0.61));
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 229.5%;
+}
+
+.myself__image {
+  position: absolute;
+  right: -22%;
+  top: 115%;
+  opacity: 0;
+  animation: appear 1s linear forwards;
+}
+
+.myself__image_ {
+  position: absolute;
+  opacity: 0; /* El SVG estará inicialmente invisible */
+  transition: opacity 1s linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0; /* Empieza a aparecer después del 50% de la animación */
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,161 @@
+.main__div {
+  width: 100%;
+  position: relative;
+  height: 75vh;
+}
+
+/* .triangles__div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+} */
+
+.triangle__1 {
+  position: absolute;
+  left: -95px;
+  top: -70px;
+  z-index: 1;
+}
+
+.triangle__2 {
+  position: absolute;
+  right: -95px;
+  top: -70px;
+  z-index: 1;
+}
+
+.main__title__div {
+  position: relative;
+  margin: auto;
+  margin-top: 95px;
+  width: fit-content;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.main__title {
+  width: 80px;
+  opacity: 0;
+  animation: appear 1s linear forwards;
+}
+
+.main__title_ {
+  opacity: 0;
+}
+
+.main__description {
+  flex-shrink: 0;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(
+    130deg,
+    #ffffffef 1.82%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 380px;
+  height: 100px;
+}
+
+.main__svg__circle__1 {
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  transform: rotate(12.875deg);
+  flex-shrink: 0;
+  opacity: 0;
+  animation: appear 1s linear forwards 0.8s;
+}
+
+.main__svg__circle__1_ {
+  opacity: 0;
+}
+
+.main__svg__circle__2 {
+  position: absolute;
+  width: fit-content;
+  top: 40px;
+  left: 92px;
+  transform: rotate(16.875deg);
+  stroke-width: 1.4px;
+  stroke: #ffc23c;
+  opacity: 0;
+  animation: appear 1s linear forwards 0.8s;
+}
+
+.main__svg__circle__2_ {
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.mouse__div {
+  margin: auto;
+  margin-top: 230px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  animation: appear 1s linear forwards 0.8s;
+}
+
+.mouse__div_ {
+  opacity: 0;
+}
+
+
+.mouse__span {
+  color: var(--parrafo, rgba(244, 244, 244, 0.7));
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.17px;
+}
+
+.mouse__line {
+  width: 4px;
+  height: 1.2px;
+  position: absolute;
+  rotate: 90deg;
+  top: 14px;
+  left: 16px;
+  z-index: 10;
+  background: #fff;
+  animation: scrolling 1s infinite linear alternate-reverse;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0; /* Empieza a aparecer después del 50% de la animación */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}

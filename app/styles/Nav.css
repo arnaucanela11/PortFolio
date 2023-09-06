@@ -1,0 +1,118 @@
+.nav__div {
+  margin-top: -50px;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line__svg {
+  width: 115%;
+  height: 0.6px;
+  transform: rotate(-0.04deg);
+  background: #ffffffd9;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.58));
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.nav__items__div {
+  width: 100%;
+  margin-right: -180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo__svg {
+  margin-left: 70px;
+  width: 57px;
+  height: 59.491px;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 0px 4px #ffc13ca5);
+}
+
+.social__network__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+}
+
+.social__network__1 {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.social__network__1:hover {
+  transform: scale(1.2);
+}
+
+.social__network__2 {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social__network__2:hover {
+  transform: scale(1.2);
+}
+
+.social__network__3 {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social__network__3:hover {
+  transform: scale(1.2);
+}
+
+.nav__item {
+  padding: 5px 8px;
+  position: relative;
+  color: #ffc13ccc;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 10;
+}
+
+/* .nav__item:hover::before {
+content: ' ';
+width: 20px;
+height: 1px;
+transform: rotate(90deg);
+background-color: #FFC23C;
+position: absolute;
+top: -20px;
+
+} */
+
+.nav__item::before {
+  content: ""; /* Agrega contenido al pseudo-elemento */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffc13cd4; /* Cambia el color del triangulito */
+  position: absolute;
+  top: 100%; /* Coloca el triangulito debajo del texto */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el triangulito horizontalmente */
+  opacity: 0; /* Inicialmente, el triangulito no es visible */
+  transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+
+.nav__item:hover::before {
+  opacity: 1; /* Muestra el triangulito al hacer hover */
+}
