@@ -12,7 +12,7 @@ function Footer() {
     <div className="footer__main__div">
       <Image src={Footer__img} alt="footerImg" className="footer__img"/>
       <div className="footer__sentence__div">
-        <h1 className={rubik_one.className}>"In a year you</h1>
+        <h1 className={rubik_one.className}>In a year you</h1>
         <h1
           className={rubik_one.className}
           style={{
@@ -21,7 +21,7 @@ function Footer() {
         >
           will regret not
         </h1>
-        <h1 className={rubik_one.className}>starting today"</h1>
+        <h1 className={rubik_one.className}>starting today</h1>
       </div>
       <div className="footer__content__div">
         <svg

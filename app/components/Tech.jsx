@@ -82,7 +82,7 @@ function Tech() {
               <h2 className={`${poppins.className} figma__title`}>Figma</h2>
             </div>
             <p className={`${poppins.className} next__p`}>
-              Despite of I'm not a designer, I like to design my projects using
+              Despite of I am not a designer, I like to design my projects using
               figma, for me the best free developers.
             </p>
           </div>

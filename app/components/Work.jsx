@@ -40,7 +40,7 @@ function Work() {
                 DESCRIPTION
               </h4>
               <p className={`${poppins.className} blascounter__description__p`}>
-                Blascounter is a{" "}
+                Blascounter is a
                 <span className="font-extrabold">tiktok marcketplace</span>,
                 that allows you
                 <br />
@@ -78,11 +78,11 @@ function Work() {
                 DESCRIPTION
               </h4>
               <p className={`${poppins.className} trackly__description__p`}>
-                Trackly is a web page wich allows you to{" "}
+                Trackly is a web page wich allows you to
                 <span className="font-extrabold">
                   track the
                   <br /> price of a online cours
-                </span>{" "}
+                </span>
                 in wich you are interested,
                 <br /> and you will recive a email if the price is equal or less
                 <br /> than the price you had specified

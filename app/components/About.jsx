@@ -37,11 +37,11 @@ function About() {
           </div>
         </div>
         <p className={` ${poppins.className} about__main__p`}>
-          To summarise, I’m 19 years old and I’m from Barcelona. I like to go{" "}
+          To summarise, I am 19 years old and I am from Barcelona. I like to go
           <br />
-          gym and read books, also spend time with my family and my friends.{" "}
+          gym and read books, also spend time with my family and my friends.
           <br />
-          In relation to my personality and mindset, I’m a very ambitious
+          In relation to my personality and mindset, I am a very ambitious
           <br />
           person, entrepreneur and brave, and I can be very obsessive when I
           <br />
@@ -60,7 +60,7 @@ function About() {
                 Degree in Busines Administration
               </h4>
               <span className="about__studies__at">
-                at{" "}
+                at
                 <span className="about__studies__UPF">
                   Pompeu Fabra University
                 </span>
