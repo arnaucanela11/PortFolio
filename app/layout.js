@@ -7,8 +7,7 @@ export const rubik_one = Rubik_Mono_One({subsets: ['latin'], weight: ['400']})
 
 
 export const metadata = {
-  title: 'Arnau Canela',
-  description: 'Portfolio of Arnau Canela',
+  title: 'Arnau Canela'
 }
 
 export default function RootLayout({ children }) {
